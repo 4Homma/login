@@ -16,7 +16,7 @@ if ($_POST["user_name"] == "php" && $_POST["password"] == "password") {
 $_SESSION["user_name"] = $_POST["user_name"];
 
 // 管理者専用画面へリダイレクト
-$login_url = "http://{$_SERVER["HTTP_HOST"]}/php_10days/anq_result.php";
+$login_url = "http://{$_SERVER["HTTP_HOST"]}/login/keijiban2.php";
 header("Location: {$login_url}");
 exit;
 }
